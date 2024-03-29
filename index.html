@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Athira Prakash</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#Bio">About</a></li>
+                <li><a href="#Work">Experience</a></li>
+                <li><a href="#Contact">Projects</a></li>
+                <li><a href="#Resume">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">John Doe</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#Bio" onclick="toggleMenu()">About</a></li>
+                <li><a href="#Work" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#Resume" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
