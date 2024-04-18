@@ -1,3 +1,10 @@
+@media screen and (max-width: 1400px) {
+    #landing-page {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     #desktop-nav {
         display: none;
@@ -6,3 +13,17 @@
     #hamburger-nav {
         display: flex;
     }
+
+    /* #landing-page,
+    .summary {
+        display: block;
+    } */
+
+}
+
+@media screen and (max-width: 600px) {
+    #landing-page {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+}

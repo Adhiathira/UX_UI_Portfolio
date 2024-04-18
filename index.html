@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="./css/mediaqueries.css" />
 </head>
 <body>
-    <nav id="desktop-nav">
+    <nav id="desktop-nav"> <!-- navigation bar -->
         <div class="logo">Athira Prakash</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#Bio">About</a></li>
-                <li><a href="#Work">Experience</a></li>
-                <li><a href="#Contact">Projects</a></li>
-                <li><a href="#Resume">Contact</a></li>
+                <li><a href="#Bio">Bio</a></li>
+                <li><a href="#Work">Project</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#Resume">Resume</a></li>
             </ul>
         </div>
     </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">John Doe</div>
+    <nav id="hamburger-nav"> <!-- navigation bar for phone and tab -->
+        <div class="logo">Athira Prakash</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -28,13 +28,83 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#Bio" onclick="toggleMenu()">About</a></li>
-                <li><a href="#Work" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#Contact" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#Resume" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#Bio" onclick="toggleMenu()">Bio</a></li>
+                <li><a href="#Work" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#Resume" onclick="toggleMenu()">Resume</a></li>
             </div>
         </div>
     </nav>
+
+    <!-- The  hero Section -->
+    <section id="landing-page">
+        <div class="summary">
+            <h3>A UX Designer driven </h3>
+            <h3>to create impactful </h3>
+            <h3>user experiences </h3>
+            <h3>that <span class="loop"> </span>
+            </h3>
+
+            <div class="btn-container">
+                <button class="btn-Work" onclick="location.href='./#contact'">
+                    Projects
+                </button>
+
+                <button class="btn-resume" onclick="location.href='./#contact'">
+                    Resume
+                </button>
+            </div>
+        </div>
+
+        <!-- picture section -->
+        <div class="Profilepic">
+            <img src="./images/mainpic.png">
+        </div>
+    </section>
+
+    <!-- arrow icon  -->
+    <div class="Arrow-section">
+        <span class="material-symbols-outlined">expand_circle_down</span>
+    </div>
+
+    <!-- Ux Design process  -->
+    <section id="Design-process">
+        <h5 class="subheading">How I work?</h5>
+
+        <h4 class="mainheading">My design process</h4>
+        <h4 class="mainheading"> is simple and </h4>
+        <h4 class="mainheading">straight-forward. </h4>
+
+        <!-- image slider   -->
+
+        <div class="design">
+            <div class="design-slider">
+                <img src="./images/Ux design test 1.png" />
+                <img src="./images/test 2.png" />
+
+
+
+
+            </div>
+
+            <div class="design-slider">
+                <img src="./images/Ux design test 1.png" />
+                <img src="./images/test 2.png" />
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
     <script src="script.js"></script>
+
+
 </body>
 </html>

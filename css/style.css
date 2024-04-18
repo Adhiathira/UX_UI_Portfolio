@@ -1,22 +1,27 @@
 /*General*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+
+
+
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Poppins", sans-serif;
+
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-p {
-    color: rgb(85, 85, 85);
-}
+
+
 
 /* TRANSITION */
 
@@ -31,12 +36,15 @@ a,
 nav,
 .nav-links {
     display: flex;
+
 }
 
 nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    padding-top: 0;
+    background-color: #1A2C38;
     /* nav height % */
 }
 
@@ -47,20 +55,21 @@ nav {
 }
 
 a {
-    color: black;
+    color: white;
     text-decoration: none;
     text-decoration-color: white;
 }
 
 a:hover {
-    color: grey;
+    color: #00D6D3;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
+    text-decoration-color: #00D6D3;
 }
 
 .logo {
     font-size: 2rem;
+    color: white;
 }
 
 .logo:hover {
@@ -91,7 +100,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: white;
     transition: all 0.3 ease-in-out;
 }
 
@@ -99,7 +108,6 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -111,7 +119,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -146,4 +154,247 @@ a:hover {
 
 .hamburger-icon span:first-child {
     transform: none;
+}
+
+/* hero section   */
+#landing-page {
+    background-color: #162630;
+    display: flex;
+    padding-top: 6vh;
+    height: 75vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+    min-width: fit-content;
+}
+
+.summary {
+    width: auto;
+    margin: 0 14rem;
+}
+
+.summary h3 {
+    font-weight: 600;
+    font-size: 2.98rem;
+    color: white;
+}
+
+/* spam loop for words along with colors */
+
+.loop::before {
+    content: "resonate.";
+    animation: animate infinite 3s;
+    padding-left: 10px;
+    background: linear-gradient(to right, #FF1FDA, #00D6D3);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@keyframes animate {
+
+    0% {
+        content: "resonate.";
+        background: linear-gradient(to right, #FF1FDA, #00D6D3);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    50% {
+        content: "inspire.";
+        background: linear-gradient(to right, #FF1FDA, #00D6D3);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    75% {
+        content: "connect.";
+        background: linear-gradient(to right, #FF1FDA, #00D6D3);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+}
+
+
+/* buttons section   */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-right: 50%;
+}
+
+/* buttons style for both    */
+.btn-Work,
+.btn-resume {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.6rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+/* buttons project    */
+
+.btn-Work {
+    background: #00D6D3;
+    color: white;
+    border: #00D6D3 0.1rem solid;
+}
+
+
+.btn-Work:hover {
+    background: #19dedb;
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+/* buttons resume    */
+.btn-resume {
+    position: relative;
+    z-index: 1;
+    border-radius: 0.5rem;
+    background: linear-gradient(to right, #FF1FDA, #00D6D3);
+    color: white;
+}
+
+.btn-resume::before {
+    content: "";
+    position: absolute;
+    left: 0.1rem;
+    right: 0.1rem;
+    top: 0.1rem;
+    bottom: 0.1rem;
+    border-radius: 0.5rem;
+    background-color: #162630;
+    z-index: -1;
+    transition: 200ms
+}
+
+.btn-resume::after {
+    content: attr(data);
+    background: linear-gradient(to left, #FF1FDA, #00D6D3);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 200ms
+}
+
+
+.btn-resume:hover::before {
+    opacity: 90%;
+    left: 0.1rem;
+    right: 0.1rem;
+    top: 0.1rem;
+    bottom: 0.1rem;
+}
+
+
+
+/* profile pic illustration    */
+.Profilepic {
+    display: flex;
+    height: 390px;
+    width: 390px;
+}
+
+
+/*icons */
+
+.Arrow-section {
+    background-color: #162630;
+    text-align: center;
+}
+
+.material-symbols-outlined {
+    font-size: 50px;
+    color: #00D6D3;
+
+}
+
+
+
+/*How do i work */
+
+
+
+#Design-process {
+    background-color: #1A2C38;
+}
+
+.subheading {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 4%;
+    color: white;
+}
+
+.mainheading {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    justify-content: center;
+}
+
+/*Image slider */
+
+
+
+.design {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.design :before,
+.design :after {
+    position: absolute;
+    top: 0;
+    content: "";
+    z-index: 2;
+}
+
+.design :hover .design-slider {
+    animation-play-state: paused;
+}
+
+
+.design-slider {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+
+}
+
+
+
+
+
+
+/* 
+ .frame img {
+    margin: 0 40px;
+    height: 200px;
+    width: 300px;
+
+} */
+
+.slide-text {
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
