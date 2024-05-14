@@ -36,11 +36,8 @@ a,
 
 /* DESKTOP NAV */
 
-nav,
-.nav-links {
-    display: flex;
 
-}
+
 
 nav {
     justify-content: space-around;
@@ -48,6 +45,8 @@ nav {
     height: 17vh;
     padding-top: 0;
     background-color: #1A2C38;
+    display: flex;
+
     /* nav height % */
 }
 
@@ -55,6 +54,7 @@ nav {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+    display: flex;
 }
 
 a {
@@ -73,6 +73,7 @@ a:hover {
 .logo {
     font-size: 2rem;
     color: white;
+    margin-right: 40%;
 }
 
 .logo:hover {
@@ -168,16 +169,18 @@ a:hover {
     box-sizing: border-box;
     min-height: fit-content;
     min-width: fit-content;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .summary {
     width: auto;
-    margin: 0 14rem;
+    margin: 4.4rem;
 }
 
 .summary h3 {
     font-weight: 600;
-    font-size: 2.98rem;
+    font-size: 3.4rem;
     color: white;
 }
 
@@ -276,6 +279,7 @@ a:hover {
     display: flex;
     height: 390px;
     width: 390px;
+
 }
 
 
@@ -328,6 +332,7 @@ a:hover {
     white-space: nowrap;
     position: relative;
     background-color: #1A2C38;
+    height: 60vh;
 }
 
 .design:before,
@@ -890,5 +895,29 @@ a:hover {
 }
 
 #footer {
-    background-color: #162630;
+    background-color: #0F212E;
+
+}
+
+.footer-logo {
+    font-size: 2rem;
+    color: rgb(254, 254, 254);
+    margin-left: 4.4%;
+}
+
+.footer-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1rem;
+    display: flex;
+    margin-left: 4.4%;
+    margin-top: 1%;
+
+}
+
+.footer-text {
+    color: white;
+    text-align: center;
+    margin: 1%;
+
 }
